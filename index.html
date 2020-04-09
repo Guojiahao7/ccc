@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>notepad</title>
+  <link rel="stylesheet" href="./layout.css">
+  <link rel="icon" href="https://i.wangding.in/favicon.ico" sizes="48x48" type="image/png">
+ </head>
+<body>
+   <div class="test"><input type="button" value="记事本" id="notebook"/></div>
+   <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   <script src="./index.js"></script>
+
+  <script>
+    $(function() {
+        var $btn = $('div.test>input[type="button"]');
+        $btn.click(function() {
+            $big.show();
+            $btn.hide();
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.test{
+    text-align: center;
+}
+#notebook{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+.notepad{
+  width:500px;
+  height:500px;
+  border:1px solid #3399FF;
+  position:relative;
+  left: 50%;
+  margin-left: -250px;
+}
+.note-header{
+  font-size:0.6em;
+  margin:2px 5px;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+}
+.note-header p{
+  margin:0;
+  float:left
+}
+.note-header span{
+  float:right;
+  cursor: pointer;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.note-header span:hover{
+  color: #fff;
+  background: red;
+  border-radius: 5px;
+}
+.notepad-menubar {
+  left: 0;
+  position:absolute;
+  right: 0;
+  top: 20px;
+  user-select: none;
+  z-index: 5;
+}
+
+.notepad-menubar .menu-title {
+  margin: 0;
+  padding: 0;
+  border-bottom:2px solid #f2f2f2;
+}
+
+.notepad-menubar .title {
+  border: 1px solid white;
+  box-sizing: border-box;
+  cursor: default;
+  display: inline-block;
+  font-size: 0.8em;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  width: 54px;
+}
+
+.notepad-menubar .title:hover {
+  box-sizing: border-box;
+  background-color: #cce8ff;
+  border: 1px solid #99d1ff;
+}
+
+.notepad-menubar .menus {
+  background-color: #f2f2f2;
+  box-shadow: 5px 5px 5px #a6a6a6;
+  display:none;
+  font-size: 0.8em;
+  margin: 0;
+  padding: 2px;
+  position: absolute;
+  top: 22px;
+  left:0;
+  width: 202px;
+}
+
+.notepad-menubar .menu-item {
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  margin-left: 2px;
+  margin-right: 1px;
+  padding-left: 34px;
+  position: relative;
+}
+
+.notepad-menubar .menu-item:hover {
+  background-color: #99d1ff;
+  height: 22px;
+}
+
+.notepad-menubar .shortcut {
+  position: absolute;
+  right: 20px;
+}
+
+.notepad-menubar .disabled {
+  color: #6d6d6d;
+}
+
+.notepad-menubar .disabled:hover {
+  background-color: #e6e6e6;
+}
+
+.notepad-menubar .menu-hr {
+  border: 1px solid #d7d7d7;
+  display: block;
+  height: 0px;
+  margin: 4px;
+  margin-left: 34px;
+}
+
+.notepad-menubar .checked {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 0;
+  line-height: 22px;
+  text-align: center;
+  background-color: #90c8f6;
+}
+
+.notepad-editor {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 43px;
+}
+
+.notepad-editor textarea {
+  auto-size: none;
+  border:0;
+  box-sizing: border-box;
+  height: 100%;
+  outline: none;
+  overflow: scroll;
+  padding: 0 1px;
+  resize: none;
+  width: 100%;
+  overflow-x:hidden;
+  resize:none;
+}
+
+.notepad-dlg-font {
+  width:438px;
+  z-index: 10;
+  position:relative;
+  top:-450px;
+  left:30px;
+  background-color:white;
+
+}
+
+.notepad-dlg-font .dialogbox {
+  height: 494px;
+  width: 438px;
+  border:1px solid gray;
+  }
+.notepad-dlg-titlebar{
+  height:22px;
+  font-size:0.8em;
+  margin-top:5px;
+  margin-left:10px;
+}
+.notepad-dlg-titlebar p{
+  margin:0;
+  float:left;
+}
+.notepad-dlg-titlebar span{
+  float:right;
+  margin-right:10px
+}
+.notepad-dlg-font .main {
+  height: 466px;
+  background-color:#f0f0f0;
+  position:relative;
+}
+
+.notepad-dlg-font .main .font-family{
+  display: inline-block;
+  margin-left:5px;
+  float:left;
+}
+.notepad-dlg-font .main .font-style{
+  display: inline-block;
+  margin-left:150px;
+  float:left;
+}
+.notepad-dlg-font .main .font-size{
+  display: inline-block;
+  margin-left:100px;
+  float:left;
+}
+
+.notepad-dlg-font .main .sample {
+  border-color: white;
+  height: 78px;
+  margin-left: 16px;
+  margin-top: 28px;
+  width: 194px;
+}
+
+.notepad-dlg-font .main .script {
+  margin-left: 16px;
+  margin-top: 12px;
+}
+
+.notepad-dlg-font .main select {
+  height: 22px;
+  width: 214px;
+}
+.notepad-dlg-font .main .font-size {
+  display: inline-block;
+}
+
+.notepad-dlg-font .main .btn-ok {
+  width:80px;
+  height:25px;
+  bottom: 10px;
+  position: absolute;
+  right: 110px;
+}
+
+.notepad-dlg-font .main .btn-cancel {
+  width:80px;
+  height:25px;
+  bottom: 10px;
+  position: absolute;
+  right: 16px;
+}
+
+
+.notepad-com-list {
+  user-select: none;
+  width: 200px;
+}
+
+.notepad-com-list .editor {
+  border: 1px solid #0078d7;
+  box-sizing: border-box;
+  font-size: 1em;
+  height: 20px;
+  padding-left: 2px;
+  width: 100%;
+}
+
+.notepad-com-list .list {
+  background-color: white;
+  border: 1px solid #828790;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 146px;
+  margin:0;
+  padding:0;
+  overflow-y: scroll;
+  width: 100%;
+}
+.font-daxiao{
+  font-size:0.8em;
+}
+.notepad-com-list .list .item {
+  line-height: 16px;
+  padding-left: 2px;
+}
+
+.notepad-com-list .list .selected {
+  background-color: #0078d7;
+  color: white;
+}
+
+.list1,.list2,.list3 {
+  display: inline-block;
+  margin:0px 5px;
+}
